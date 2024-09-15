@@ -1,21 +1,35 @@
 .header{
   width:calc(95vw);
-  height:calc(10vh);
+  height:calc(6vh);
   margin-top:calc(-5vh);
-  padding-top:calc(5vh);
+  padding-top:calc(6.5vh);
   left:calc(2.1vw);
   background-color: #f1f1f1;
   position:fixed;
   border-radius:calc(1vw);
+  text-align: center;
 }
 main{
   height:calc(200vh);
+  padding: calc(2vw);
   padding-top:calc(10vh);
-  width:calc(95vw);
+  width:calc(91vw);
   margin-left:auto;
   margin-right:auto;
-  background-color:grey;
+  background-color: #ffffff;
+  text-align: center;
+}
+footer{
+  height:calc(10vh);
+  padding: calc(2vw);
+  width:calc(91vw);
+  margin-top: 5vh;
+  margin-left:auto;
+  margin-right:auto;
+  background-color: #ffffff;
+  text-align: center;
 }
 body{
   margin: 0;
+  background-color: #e8e8e8;
 }
