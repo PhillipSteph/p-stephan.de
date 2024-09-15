@@ -1,0 +1,21 @@
+.header{
+  width:calc(95vw);
+  height:calc(10vh);
+  margin-top:calc(-5vh);
+  padding-top:calc(5vh);
+  left:calc(2.1vw);
+  background-color: #f1f1f1;
+  position:fixed;
+  border-radius:calc(1vw);
+}
+main{
+  height:calc(200vh);
+  padding-top:calc(10vh);
+  width:calc(95vw);
+  margin-left:auto;
+  margin-right:auto;
+  background-color:grey;
+}
+body{
+  margin: 0;
+}
