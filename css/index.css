@@ -3,7 +3,7 @@
   height:calc(6vh);
   margin-top:calc(-5vh);
   padding-top:calc(6.5vh);
-  left:calc(2.1vw);
+  left:calc(2.5vw - 8px);
   background-color: #f1f1f1;
   position:fixed;
   border-radius:calc(1vw);
