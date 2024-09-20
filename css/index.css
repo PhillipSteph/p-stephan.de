@@ -39,17 +39,19 @@ h1{
 main{
   height:calc(200vh);
   padding: calc(2vw);
-  padding-top:calc(10vh);
-  width:calc(91vw);
+  width:calc(90vw);
   margin-left:auto;
   margin-right:auto;
   background-color: #ffffff;
   text-align: center;
 }
+.reference{
+  height: calc(12vh);
+}
 footer{
   height:calc(10vh);
   padding: calc(2vw);
-  width:calc(91vw);
+  width:calc(90vw);
   margin-top: 5vh;
   margin-left:auto;
   margin-right:auto;
@@ -59,3 +61,41 @@ footer{
 body{
   margin: 0;
 }
+.imglefttextright{
+  width:100%;
+  height:calc(80vh);
+}
+.imgsquareleft{
+  width:calc(38vw);
+  height:calc(38vw);
+  float:left;
+}
+.textunderimage{
+  padding-top: 5px;
+  height:calc(2vw);
+  width: calc(38vw);
+  float:left;
+}
+.imgsquareleft img{
+  margin-bottom: 0;
+  width: 100%; /* Adjust the width as needed */
+  height: 100%;/* Adjust the height as needed */
+  object-fit: cover;
+  object-position: left;
+  float: left;
+  border-radius:calc(0.3vh);
+}
+.textright{
+  font-family: Arial;
+  border-radius: 0 calc(1vw) calc(1vw) 0;
+  box-sizing: border-box;
+  padding: calc(3vw);
+  height: calc(38vw);
+  width: calc(51vw);
+  margin: 0 calc(1vw) 0 0;
+  float:right;
+  text-align: justify;
+  font-size: calc(1.3vw);
+  background-color: #e8e8e8;
+}
+
