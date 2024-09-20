@@ -43,6 +43,9 @@ svg,
 video {
   vertical-align: middle;
 }
+.icon {
+  background-color: transparent;
+}
 
 fieldset {
   border: 0;
