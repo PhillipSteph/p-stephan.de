@@ -258,7 +258,7 @@ h2{
     padding-top:1%;
     text-align: center;
     display: block;
-    width: calc(100vw);
+    width: 100%;
     height: fit-content;
     margin-bottom:5%;
   }
@@ -271,7 +271,7 @@ h2{
       font-size: calc(3.5vh);
   }
   div.threeparts div.left{
-    width:80%;
+    width:90%;
     height: fit-content;
     left:5%;
     position:relative;
@@ -281,7 +281,7 @@ h2{
     margin-left:0%;
   }
   div.threeparts div.mid{
-    width:80%;
+    width:90%;
     height: fit-content;
     left:5%;
     padding-bottom:5%;
@@ -291,7 +291,7 @@ h2{
     margin-top:calc(15vh);
   }
   div.threeparts div.right{
-    width:80%;
+    width:90%;
     height: fit-content;
     left:5%;
     padding-bottom:5%;
