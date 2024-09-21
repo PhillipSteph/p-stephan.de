@@ -11,6 +11,18 @@ button{
   border-radius:6px;
   border-width:2px;
   transition: 0.2s;
+  &.closethree{
+    display: none;
+    padding:8px;
+    border-radius: 0;
+    background-color: transparent;
+    border-color: transparent;
+    border-width: 0;
+    width: calc(2vw);
+    height: calc(2vw);
+    color: darkslategray;
+    transition: 0.2s;
+  }
 }
 button:hover{
   background-color: #ececec;

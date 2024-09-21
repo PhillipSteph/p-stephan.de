@@ -6,6 +6,7 @@
   background-color: #fbfbfb;
   position:fixed;
   box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
 }
 h1{
   font-family: "Times New Roman";
@@ -64,7 +65,7 @@ body{
 }
 .imglefttextright{
   width:100%;
-  height:calc(80vh);
+  height:calc(40vw);
 }
 .imgsquareleft{
   width:calc(38vw);
@@ -91,6 +92,8 @@ body{
 .textright{
   font-family: Arial;
   border-radius: 0 calc(1vw) calc(1vw) 0;
+  font-weight: 300;
+  letter-spacing: calc(0.1vw);
   box-sizing: border-box;
   padding: calc(3vw);
   height: calc(38vw);
@@ -101,6 +104,98 @@ body{
   font-size: calc(1.3vw);
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   z-index: 10;
+}
+div.threeparts{
+  padding-top:10%;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height:calc(37vw);
+  width: calc(65vw);
+}
+div.threeparts div.left{
+  cursor:pointer;
+  width:20%;
+  left:5%;
+  height:calc(38vw);
+  position:absolute;
+  transition:0.5s;
+  margin-left:10%;
+  border-radius: calc(1vw);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255,255,255,0.3);
+  backdrop-filter: blur(0.7vw);
+}
+div.threeparts div.mid{
+  cursor:pointer;
+  border-radius: calc(1vw);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  width:20%;
+  left:40%;
+  height:calc(38vw);
+  position:absolute;
+  transition:0.5s;
+  background-color: rgba(255,255,255,0.3);
+  backdrop-filter: blur(0.7vw);
+}
+div.threeparts div.right{
+  cursor:pointer;
+  background-color: rgba(255,255,255,0.3);
+  backdrop-filter: blur(0.7vw);
+  border-radius: calc(1vw);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  width:20%;
+  left:65%;
+  height:calc(38vw);
+  position:absolute;
+  transition:0.5s;
+}
+.orgimg{
+  border-radius: calc(1vw) calc(1vw) 0 0;
+  width:100%;
+  height:auto;
+  margin-bottom:0;
+  transition:0.5s;
+}
+.altimg{
+  border-radius: calc(0.5vw);
+  width:40%;
+  height:auto;
+  margin-top:-7%;
+}
+.text{
+  width:90%;
+  height: 51%;
+  overflow:hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+}
+div.threeparts div.text{
+  font-family: "Calibri";
+  letter-spacing: calc(0.1vw);
+  margin-left:5%;
+  margin-right:5%;
+  text-align: justify;
+  line-height:calc(2vw);
+  font-size:calc(1.2vw);
+}
+.top{
+  width:calc(100vw);
+}
+h3{
+  margin-top:calc(1vh);
+  font-size:calc(2vw);
+  letter-spacing: calc(0.2vw);
+  font-family: "Calibri Light", sans-serif;
+  font-weight: 200;
+}
+h2{
+  margin-top:calc(1vh);
+  font-size:calc(2.5vw);
+  font-weight: 200;
+  letter-spacing: calc(0.5vw);
 }
 @media only screen and (max-width: 768px) and (orientation: portrait) {
   .header40{
@@ -151,4 +246,76 @@ body{
     background-color: white;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   }
+  div.threeparts{
+    padding-top:1%;
+    text-align: center;
+    display: block;
+    width: calc(65vw);
+    margin-bottom:5%;
+  }
+  h3{
+    margin-top:calc(1vh);
+    font-size:calc(2vh);
+    margin-bottom:calc(1.3vw);
+  }
+  h2{
+
+  }
+  div.threeparts div.left{
+    background-color: whitesmoke;
+    width:calc(77vw);
+    left:5%;
+    position:relative;
+    padding-bottom:5%;
+    transition:0.5s;
+    margin-top:calc(15vh);
+    margin-left:10%;
+  }
+  div.threeparts div.mid{
+    background-color: whitesmoke;
+    width:calc(77vw);
+    left:5%;
+    padding-bottom:5%;
+    position:relative;
+    transition:0.5s;
+    margin-left:10%;
+    margin-top:calc(15vh);
+  }
+  div.threeparts div.right{
+    background-color: whitesmoke;
+    width:calc(77vw);
+    left:5%;
+    padding-bottom:5%;
+    position:relative;
+    transition:0.5s;
+    margin-left:10%;
+    margin-top:calc(15vh);
+  }
+  .orgimg{
+    width:100%;
+    height:auto;
+    margin-bottom:0;
+    transition:0.5s;
+  }
+  .altimg{
+    width:40%;
+    height:auto;
+    margin-top:-7%;
+  }
+  .text{
+    width:90%;
+    height: 51%;
+    overflow:hidden;
+  }
+  div.threeparts div.text{
+    margin-left:5%;
+    margin-right:5%;
+    text-align: justify;
+    line-height:calc(5vw);
+    font-size:calc(1.5vh);
+  }
+  .top{
+    width:calc(100vw);
+  }
+
 }
