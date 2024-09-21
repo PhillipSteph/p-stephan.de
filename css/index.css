@@ -39,7 +39,7 @@ h1{
   float:left;
 }
 main{
-  height:calc(200vh);
+  height:auto;
   padding: calc(2vw);
   width:calc(90vw);
   margin-left:auto;
@@ -50,15 +50,22 @@ main{
 .reference{
   height: calc(12vh);
 }
+button.closethree{
+  background-color: transparent;
+  border-color: transparent;
+  display: none;
+}
 footer{
   height:calc(10vh);
   padding: calc(2vw);
-  width:calc(90vw);
+  box-sizing: border-box;
+  width:100%;
   margin-top: 5vh;
   margin-left:auto;
   margin-right:auto;
   background-color: #ffffff;
   text-align: center;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 body{
   margin: 0;
@@ -128,6 +135,7 @@ div.threeparts div.left{
   backdrop-filter: blur(0.7vw);
 }
 div.threeparts div.mid{
+  margin-top: 0;
   cursor:pointer;
   border-radius: calc(1vw);
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
@@ -166,7 +174,7 @@ div.threeparts div.right{
 }
 .text{
   width:90%;
-  height: 51%;
+  height: 52%;
   overflow:hidden;
   display: -webkit-box;
   -webkit-line-clamp: 10;
@@ -207,17 +215,17 @@ h2{
   }
   .imglefttextright{
     width:100%;
-    height:fit-content;
+    height:calc(40vh + 30vw);
   }
   .imgsquareleft{
     width:100%;
-    height:calc(32vh);
+    height:calc(50vw);
     float:left;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   }
   .textunderimage{
     padding-top: 5px;
-    height:10%;
+    height:15%;
     width: 100%;
     float:left;
     background-color: white;
@@ -225,7 +233,7 @@ h2{
   .imgsquareleft img{
     margin-bottom: 0;
     width: 100%; /* Adjust the width as needed */
-    height: 90%;/* Adjust the height as needed */
+    height: 85%;/* Adjust the height as needed */
     object-fit: cover;
     object-position: center;
     float: left;
@@ -250,7 +258,8 @@ h2{
     padding-top:1%;
     text-align: center;
     display: block;
-    width: calc(65vw);
+    width: calc(100vw);
+    height: fit-content;
     margin-bottom:5%;
   }
   h3{
@@ -259,36 +268,36 @@ h2{
     margin-bottom:calc(1.3vw);
   }
   h2{
-
+      font-size: calc(3.5vh);
   }
   div.threeparts div.left{
-    background-color: whitesmoke;
-    width:calc(77vw);
+    width:80%;
+    height: fit-content;
     left:5%;
     position:relative;
     padding-bottom:5%;
     transition:0.5s;
     margin-top:calc(15vh);
-    margin-left:10%;
+    margin-left:0%;
   }
   div.threeparts div.mid{
-    background-color: whitesmoke;
-    width:calc(77vw);
+    width:80%;
+    height: fit-content;
     left:5%;
     padding-bottom:5%;
     position:relative;
     transition:0.5s;
-    margin-left:10%;
+    margin-left:0%;
     margin-top:calc(15vh);
   }
   div.threeparts div.right{
-    background-color: whitesmoke;
-    width:calc(77vw);
+    width:80%;
+    height: fit-content;
     left:5%;
     padding-bottom:5%;
     position:relative;
     transition:0.5s;
-    margin-left:10%;
+    margin-left:0%;
     margin-top:calc(15vh);
   }
   .orgimg{
@@ -304,7 +313,7 @@ h2{
   }
   .text{
     width:90%;
-    height: 51%;
+    height: calc(52vh);
     overflow:hidden;
   }
   div.threeparts div.text{
