@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body>
+<body onload="getDownloadcnts()">
   <div class="header">
     <div class="header30">
       <h1>Phillip Stephan</h1>
@@ -86,6 +86,21 @@
         <div class="text">
         </div>
       </div>
+    </div>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <input id="noahcnt" readonly type="number" value="0">
+          </td>
+          <td>
+            <input id="physicscnt" readonly type="number" value="0">
+          </td>
+          <td>
+            <input id="gamecnt" readonly type="number" value="0">
+          </td>
+        </tr>
+      </table>
     </div>
   </main>
   <footer>

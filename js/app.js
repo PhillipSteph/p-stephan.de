@@ -1,4 +1,5 @@
 window.onscroll = function() {scrollFunction()};
+const apiUrl = "http://localhost:8080/api/"
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("logo").classList.add("smalllogo");
@@ -7,6 +8,29 @@ function scrollFunction() {
     document.getElementById("logo").classList.add("biglogo");
     document.getElementById("logo").classList.remove("smalllogo");
   }
+}
+function getDownloadcnt(game){
+  fetch(apiUrl+"downloads/"+game)
+    .then( response => {
+      if(!response.ok) {
+        throw new Error("Not Okay!")
+      }
+      return response.json();
+    })
+    .then( data => {
+      console.log("Data "+data);
+      var input = document.getElementById(game+"cnt");
+      input.value = data;
+    })
+    .catch(error => {
+      console.error("Error: "+error);
+    });
+}
+
+function getDownloadcnts(){
+  getDownloadcnt("noah");
+  getDownloadcnt("physics");
+  getDownloadcnt("game");
 }
 function menu() {
   var x = document.getElementById("myLinks");
