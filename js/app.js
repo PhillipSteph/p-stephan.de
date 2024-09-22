@@ -1,5 +1,5 @@
 window.onscroll = function() {scrollFunction()};
-const apiUrl = "http://localhost:8080/api/"
+const apiUrl = "http://p-stephan.de:8080/api/"
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("logo").classList.add("smalllogo");
