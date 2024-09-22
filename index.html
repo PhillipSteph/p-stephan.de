@@ -65,9 +65,9 @@
             denn dein Magazin hat nur bedingt Platz. Außerdem werden Hindernisse platziert, durch <b>Feuer</b>, welches deine Schmerzens-Skala erhöht.
             <b>Sehr viel Action</b> auf einmal, doch wie weit schaffst du es? Die Steuerung ist recht simpel, jedoch empfiehlt es sich,
             eine Maus zu verwenden. WASD zum steuern, Maus-Links zum schießen.<br>
-            Du bist interessiert, es auszuprobieren? <a href="download/Noah.zip">Hier</a> kommst du zum Download!<br>
+            Du bist interessiert, es auszuprobieren? <button onclick="downloading('noah')"><a href="download/Noah.zip">Hier</a></button> kommst du zum Download!<br>
             Zum Spielen wird eine <a href="https://www.java.com/de/download/manual.jsp">Java Runtime Environment</a> benötigt. Falls diese vorhanden ist, muss das Spiel nur entpackt
-            und danach ausgeführt werden. Entweder durchs öffnen oder über das Terminal mit <i>java -jar ./game.jar</i>.
+            und danach ausgeführt werden. Entweder durchs öffnen oder über das Terminal mit <i>java -jar ./game.jar</i>. Dieses Spiel wurde bereits <input id="noahcnt" readonly type="number" value="0"> mal heruntergeladen!
             </a>
           </p1>
         </div>
@@ -81,12 +81,12 @@
           <p1>
             <b>Game of Physics</b> ist ebenfalls ein Java-basiertes Videospiel. Hierbei ist es aber auch als eine <b>Simulation</b> zu bezeichnen.
             Durch eine Simulation von <b>verschiedenen Elementen</b> wie Wasser, Sand, Wolken oder Gebirgen kann man die <b>Kreativität</b> in diesem Spiel den freien Lauf lassen.
-            Die Steuerung kann ein wenig kompliziert wirken. Deshalb hier die wesentlichen Features:<br>
+            Die Steuerung kann ein wenig kompliziert wirken. Deshalb hier die wesentlichen Features:
             Durch links- und rechts-click der Maus können <b>Blöcke platziert und abgebaut</b> werden. Durch das simultane Betätigen der Shift-Taste wird ein quadratischer Bereich platziert.
             Die Enter-Taste ohne Shift ermöglicht es, einen Kreisförmigen-Bereich zu platzieren.<br>
-            Probier die <b>Simulation</b> doch einfach mal selber aus. <a href="download/Physics.jar">Hier</a> findest du den Download!<br>
-            Zum Spielen wird eine <a href="https://www.java.com/de/download/manual.jsp">Java Runtime Environment</a> benötigt. Falls diese vorhanden ist, muss das Spiel nur ausgeführt werden. 
-            Entweder durchs öffnen oder über das Terminal mit <i>java -jar ./Physics.jar</i>.
+            Probier die <b>Simulation</b> doch einfach mal selber aus. <button onclick="downloading('physics')"><a href="download/Physics.jar">Hier</a></button> findest du den Download!<br>
+            Zum Spielen wird eine <a href="https://www.java.com/de/download/manual.jsp">Java Runtime Environment</a> benötigt. Falls diese vorhanden ist, muss das Spiel nur ausgeführt werden.
+            Entweder durchs öffnen oder über das Terminal mit <i>java -jar ./Physics.jar</i>. Dieses Spiel wurde bereits <input id="physicscnt" readonly type="number" value="0"> mal heruntergeladen!
           </p1>
         </div>
       </div>
@@ -102,27 +102,15 @@
             <b>Besonderheit</b> dieses Spiels ist es, dass es im Gegensatz zu den anderen Spielen eine <b>Multiplayer-Funktion</b> anbietet. Kreiere Kunst, chatte mit der Chat-Funktion
             oder erkunde andere Bauten, <b>zusammen mit Anderen</b>!
             <b>Platzieren und Löschen</b> von Blöcken, schaffst du mit der Enter-, sowie der Backspace-Taste. Laufen mit WASD, Chatten mit Space, Rennen mit Shift und Schleichen mit Strg.
-            Bist du interessiert? Dann probier es doch selber aus! <a href="download/game.jar">Hier</a> findest du den Download!<br>
-            Zum Spielen wird eine <a href="https://www.java.com/de/download/manual.jsp">Java Runtime Environment</a> benötigt. Falls diese vorhanden ist, muss das Spiel nur ausgeführt werden. 
-            Entweder durchs öffnen oder über das Terminal mit <i>java -jar ./game.jar</i>.
+            Bist du interessiert? Dann probier es doch selber aus! <button onclick="downloading('game')"><a href="download/game.jar">Hier</a></button> findest du den Download!<br>
+            Zum Spielen wird eine <a href="https://www.java.com/de/download/manual.jsp">Java Runtime Environment</a> benötigt. Falls diese vorhanden ist, muss das Spiel nur ausgeführt werden.
+            Entweder durchs öffnen oder über das Terminal mit <i>java -jar ./game.jar</i>. Dieses Spiel wurde bereits <input id="gamecnt" readonly type="number" value="0"> mal heruntergeladen!
+
           </p1>
         </div>
       </div>
     </div>
     <div>
-      <table>
-        <tr>
-          <td>
-            <input id="noahcnt" readonly type="number" value="0">
-          </td>
-          <td>
-            <input id="physicscnt" readonly type="number" value="0">
-          </td>
-          <td>
-            <input id="gamecnt" readonly type="number" value="0">
-          </td>
-        </tr>
-      </table>
     </div>
   </main>
   <footer>

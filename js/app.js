@@ -9,6 +9,21 @@ function scrollFunction() {
     document.getElementById("logo").classList.remove("smalllogo");
   }
 }
+function downloading(game){
+fetch(apiUrl+"download/"+game)
+  .then( response => {
+  if(!response.ok) {
+    throw new Error("Not Okay!")
+  }
+  return response.json();
+})
+  .then( data => {
+    console.log("Data "+data);
+  })
+  .catch(error => {
+    console.error("Error: "+error);
+  });
+}
 function getDownloadcnt(game){
   fetch(apiUrl+"downloads/"+game)
     .then( response => {

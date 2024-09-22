@@ -172,6 +172,16 @@ div.threeparts div.right{
   height:auto;
   margin-top:-7%;
 }
+input{
+  width: auto;
+  height: calc(1vw);
+  width: calc(3vw);
+  border-color: transparent;
+  background-color: transparent;
+  color: green;
+
+  font-size: calc(1.2vw);
+}
 .text{
   width:90%;
   height: 52%;
